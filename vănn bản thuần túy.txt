@@ -1,0 +1,17 @@
+my-child/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── lib/
+│   ├── supabase.ts
+│   └── media.ts
+├── supabase/
+│   └── schema.sql
+├── public/
+│   └── manifest.json
+├── .env.example
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── README.md

@@ -1,0 +1,44 @@
+
+-- Hồ sơ của con
+children (
+  id, user_id, full_name, birth_date,
+  avatar_url, created_at
+)
+
+-- Ảnh và video
+media (
+  id, child_id, storage_path,
+  original_filename, media_type,
+  captured_at, original_exif_date,
+  date_source, date_confidence,
+  manual_override, created_at
+)
+
+-- Các sự kiện
+events (
+  id, child_id, title, description,
+  start_date, end_date, category
+)
+
+-- Ảnh thuộc sự kiện
+event_media (
+  event_id, media_id, sort_order
+)
+
+-- Nhật ký ký ức
+journals (
+  id, child_id, event_id,
+  title, content, memory_date
+)
+
+-- Dự án phim
+movies (
+  id, child_id, title, start_date,
+  end_date, style, status, output_path
+)
+
+-- Ảnh trong phim
+movie_media (
+  movie_id, media_id, sort_order,
+  duration, transition
+)
